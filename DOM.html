@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function handleRemove(){
+                var parent = document.getElementById("div1");
+                var child = document.getElementById('product1');
+                parent.removeChild(child);
+            }
+
+            function handleCreate(){
+                var parent = document.getElementById("div1");
+
+                var child = document.createElement("p")
+                var text = document.createTextNode('TV 800$');
+                child.appendChild(text);
+                parent.append(child)
+            }
+    
+        </script>
+    </head> 
+    <body>
+          <div id="div1">
+            <p id="product1">Cellphone 300$</p>
+            
+          </div>
+          <input type="button" value="remove" onclick="handleRemove()">
+          <input type="button" value="create" onclick="handleCreate()">
+    </body>
+</html>
