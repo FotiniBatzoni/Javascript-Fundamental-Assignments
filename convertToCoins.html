@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+           function convertToCoins(amount){
+            const arr=[];
+           while(amount>0){
+            if(amount>25){
+                while(amount>=25){
+                arr.push(25)
+                amount-=25;
+                }
+            }else if(amount>=10){
+                while(amount>=10){
+                    arr.push(10)
+                    amount-=10;
+                }
+            }else if(amount>=5){
+                while(amount>=5){
+                    arr.push(5)
+                    amount-=5;
+                }
+            }else if(amount>=2){
+            
+                while(amount>=2){
+                    arr.push(2)
+                    amount-=2;
+                }
+            }else if(amount===1){
+                    arr.push(1)
+                    amount-=1;
+            }              
+            if(amount===0){
+                return arr;
+             }
+           }
+        }
+    
+      
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
