@@ -1,0 +1,35 @@
+<!-- Write a function that takes an array of numbers and returns the sum of squares of those numbers.
+E.g. if the array passed is [1, 2, 3] then the function should return 14. -->]
+
+<!-- nst message = ["JavaScript ", "is ", "fun."];
+
+// function to join each string elements
+function joinStrings(accumulator, currentValue) {
+  return accumulator + currentValue;
+}
+
+// reduce join each element of the string
+let joinedString = message.reduce(joinStrings);
+console.log(joinedString);
+
+// Output: JavaScript is fun. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function sumSquare(arr){
+                let sumSq=0;
+                for( i=0; i<arr.length; i++){
+                    sumSq += arr[i]*arr[i];
+                   // console.log(`${sumSq} + ${i}`)
+                }
+                return sumSq
+            }
+          
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
