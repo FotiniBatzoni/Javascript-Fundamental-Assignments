@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            String.prototype.isPalidrome = function (){
+                const str = this.valueOf();
+                let isPalidrome = false
+                
+                for(let i=0;i<str.length-1;i++){
+                    console.log(str[i],str[str.length-i-1])
+                        if(str[i]===str[str.length-i-1]){
+                             isPalidrome = true
+                         }else{
+                            return false
+                        }
+                    }
+                   return isPalidrome;
+            }
+            
+          
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
