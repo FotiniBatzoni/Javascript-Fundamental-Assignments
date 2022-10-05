@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const capitalizeName = function(name){
+                let firstLetter = name[0];
+                let rest = name.slice(1);
+                return firstLetter.toLocaleUpperCase()+rest
+            }
+
+            const names = ['paul','peter','jim'];
+
+            const capitalNames = names.map(capitalizeName).join(',');
+
+            
+            console.log(capitalNames);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
