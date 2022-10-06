@@ -15,6 +15,10 @@
                 console.log('HONK HONK')
             }
 
+            Vehicle.prototype.toString = function(){
+                return `Car: { wheels: ${this.wheels}, color: ${this.color} }`
+            }
+
             //Instance of vehicle class
             const car = new Vehicle(4,'red');
             const motorcycle = new Vehicle(2,'green');
