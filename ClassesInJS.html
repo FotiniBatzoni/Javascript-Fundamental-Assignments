@@ -19,9 +19,29 @@
                 return `Car: { wheels: ${this.wheels}, color: ${this.color} }`
             }
 
-            //Instance of vehicle class
-            const car = new Vehicle(4,'red');
-            const motorcycle = new Vehicle(2,'green');
+            var Car = function(color){
+                this.wheels=4;
+                this.color= color;
+            };
+
+            //that inherits the honk
+            Car.prototype = new Vehicle();
+
+            //It overides the honk Vehicle method
+            Car.prototype.honk = function(){
+                console.log('Beep Beep')
+            }
+
+            Car.prototype.move = function(distance){
+                console.log('Moving car: ',distance)
+            }
+
+            //Instance of the Car sub-class
+            const car = new Car('red');
+
+            //Instance of vehicle base- class
+             const motorcycle = new Vehicle(2,'green');
+            
 
 
             car.honk();
