@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+           var mountains = ['Everest','Fish Tail','Annapurna'];
+           var mountainsFromJapan=['Fuji'];
+
+           var allMountains=[...mountains, ...mountainsFromJapan];
+           console.log(allMountains)
+
+           //------------------------------------------------------
+
+           var day = {
+            breakfast: 'Toast',
+            lunch: 'Rice with chicken'
+           }
+
+           var night = {
+                dinner : 'Noodle Soup'
+           }
+
+           var picnic= { ...day, ...night};
+           console.log(picnic)
+
+           //--------------------------------------------------------
+
+           //REST
+
+           var rivers =['Sunkoshi', 'Tamakoshi','Saptakoshi']
+
+           var[first, ...rest] = rivers;
+
+           console.log(first);
+           console.log(rest)
+
+           
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
