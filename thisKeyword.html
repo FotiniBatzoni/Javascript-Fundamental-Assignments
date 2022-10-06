@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            let nepal = {
+                //add property
+                mountains: ['Everest', 'Fish Tail', 'Annapurna'],
+
+                //add method
+                printWithDash: function(){
+                    console.log('inside printWithDah',this); ///this = nepal Object
+                    setTimeout(function(){
+                        console.log(this.mountains.join(' - '))
+                        console.log('inside setTimeout', this);  ///this = Window Object
+                    }, 3000)
+                },
+
+                printWithComma: function(){
+                    setTimeout(() => console.log(this.mountains.join(" , ")), 3000 ) // this = nepal Object
+            }
+        
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
