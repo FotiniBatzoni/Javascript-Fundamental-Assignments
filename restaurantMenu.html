@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let restaurant ={
+                name:"Pizza Place",
+                menu:[{
+                    name:"Margarita",
+                    price:7.99
+                },{
+                    name:"Capriciosa",
+                    price:8.49
+                },{
+                    name:"Vezuvio",
+                    price:8.99
+                },{
+                    name:"Buffalina",
+                    price:9.99
+                },{
+                    name:"Special",
+                    price:10.49
+                }],
+                displayMenu : function(){
+                    let catalogue = []
+                    for(item of this.menu){
+                        catalogue.push(item)
+                        alert(`${item.name} ${item.price}`)
+                    }
+                },
+                displayOrder : function(){
+                    let order = prompt('What you would like to order?');
+                    switch(order){
+                        case 'Margarita': alert(`${this.menu[0].name} ${this.menu[0].price}`);
+                        break;
+                        case 'Capriciosa': alert(`${this.menu[1].name} ${this.menu[1].price}`);
+                        break;
+                        case 'Vezuvio': alert(`${this.menu[2].name} ${this.menu[2].price}`);
+                        break;
+                        case 'Buffalina': alert(`${this.menu[3].name} ${this.menu[3].price}`);
+                        break;
+                        case 'Special': alert(`${this.menu.name[4]} ${this.menu.price[4]}`);
+                        break;
+                        default : alert("There is no such pizza")
+                    }
+                }
+            }
+            restaurant.displayMenu();
+            restaurant.displayOrder();
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
