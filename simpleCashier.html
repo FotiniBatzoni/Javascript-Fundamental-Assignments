@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const amount = 128;
+           const paidAmount = prompt(`Your total amount is ${amount}. How much is the amount you are paying?`);
+           console.log(paidAmount)
+        
+       
+           function calculateChange(change){
+             change = amount- parseInt(paidAmount);
+            console.log(change)
+            if(change===0){
+                alert('Thank you!! You gave the exact amount')
+            }else if(change < 0){
+                alert(`You gave too much. Your change is $${Math.abs(change)}`)
+            }else{
+                alert(`You gave too little.You still owe $${change}`)
+            }
+           }
+           calculateChange()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
