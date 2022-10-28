@@ -1012,11 +1012,31 @@ const slotOfTypes = () => {
     }
 }
 
+const weight = () => {
+    alert(`Weight : ${pokemon.weight}`)
+}
 
-// abilities();
-// baseExperience();
-// height();
-// metalPowderUrl();
-//sprites();
-//statNames();
+const firstVersionGroupDetails = () => {
+    const moves = pokemon.moves[0]
+    Object.keys(moves.version_group_details[1]).forEach(function(key){
+        alert(`${key} ${moves.version_group_details[1][key]}`)
+        if(key==='version_group' || key==='move_learn_method'){
+            console.log('here')
+            Object.keys(moves.version_group_details[1][key]).forEach(function(key1){
+                alert(`${key} :${moves.version_group_details[1][key][key1]} `)
+            })
+        }
+    })
+
+}
+
+
+abilities();
+baseExperience();
+height();
+metalPowderUrl();
+sprites();
+statNames();
 slotOfTypes()
+weight()
+firstVersionGroupDetails()
