@@ -35,3 +35,7 @@ function blah(num){
 }
 
 test('Test if the number input is the same as the output', blah(2),2)
+
+test('Test if the number input is the same as the output', blah(1),2)
+
+test('Test if the number input is the same as the output', 2, blah(1))
