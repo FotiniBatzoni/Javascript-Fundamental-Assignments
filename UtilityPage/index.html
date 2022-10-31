@@ -11,20 +11,20 @@
 <body>
     <h1>Jason's JavaScript Final Project</h1>
     <hr>
-    <div>
+    <div >
         <h2>Returns a random number between 1-100</h2>
         <button id="randomNumberButton" onclick="randomNumberGenerator(1,100)">Click Me</button>
         <p id="randomNumberP">Blah</p>
     </div>
     <hr>
-    <div>
+    <div >
         <h2>Returns a random number between "Start" and "End"</h2>
         <label for="rand">Start Number</label>
-        <input type="text" name="rand1">
+        <input type="text" name="rand1" id="rand1" >
         <label for="rand">End Number</label>
-        <input type="text" name="rand2">
-        <button>Click Me</button>
-        <p>Blah</p>
+        <input type="text" name="rand2" id="rand2">
+        <button onclick="randomNumberGenerator()">Click Me</button>
+        <p id="randomNumberP2">Blah</p>
     </div>
     <hr>
     <div>
@@ -114,12 +114,6 @@
         <p>Blah</p>
     </div>
     <hr>
-    <!-- <script>
-        //document.getElementById("randomNumberButton").addEventListener("click",btnClicked() )
-       function btnClicked(){
-       document.getElementById("randomNumberP").innerHTML='Button is clicked'
-       } 
-    </script> -->
     <script src="code.js"></script>
 </body>
 

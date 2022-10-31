@@ -16,10 +16,17 @@ const names =
 
 
 
-function randomNumberGenerator(x,y){
-    console.log(x),
-    console.log(y)
-                
+function randomNumberGenerator(x ,y ){   
+   let isUsersInput = false
+    if(!x &&!y){
+        x= parseInt(document.getElementById("rand1").value)
+        y= parseInt(document.getElementById("rand2").value)
+
+        isUsersInput=true;
+    
+        console.log(x,y)
+    }
+    
     let randomNum = Math.random()
     let multiply = x.toString().length
     
@@ -39,7 +46,14 @@ function randomNumberGenerator(x,y){
         randomNum =Math.floor(randomNum*multiply) ;
     }
 
-    document.getElementById("randomNumberP").innerHTML= randomNum
+
+    if(isUsersInput){
+        document.getElementById("randomNumberP2").innerHTML= randomNum;
+    }else{
+        document.getElementById("randomNumberP").innerHTML= randomNum;
+    }
+
+
 }
 
 
