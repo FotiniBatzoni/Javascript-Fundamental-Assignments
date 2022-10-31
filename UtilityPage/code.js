@@ -55,7 +55,25 @@ function randomNumberGenerator(x ,y ){
 
 }
 
-function longLoremIpsumString(){
-    console.log(lorem)
-    document.getElementById("longStr").innerHTML = lorem
+function longLoremIpsumString(x){
+    let newLorem=[];
+    x= document.getElementById("NumOfSentences").value
+    if(x){
+  
+      let numOfSentences = lorem.split(".")
+      if(x>69){
+        alert("There are 69 sentences. Your number should be less than 69")
+        }
+
+        console.log(x)
+        for(let i=0;i<x; i++){
+            newLorem.push(numOfSentences[i])
+        }
+      
+        newLorem.join(". ")
+        document.getElementById("longStr2").innerHTML = newLorem
+    }else{
+        document.getElementById("longStr").innerHTML = lorem
+    }
+   
 }
