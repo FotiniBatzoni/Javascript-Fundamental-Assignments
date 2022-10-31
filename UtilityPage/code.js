@@ -13,3 +13,33 @@ const names =
         lastName: ""
     }
 ]
+
+
+
+function randomNumberGenerator(x,y){
+    console.log(x),
+    console.log(y)
+                
+    let randomNum = Math.random()
+    let multiply = x.toString().length
+    
+    switch(multiply){
+        case 1 : multiply = 10; break;
+        case 2 : multiply = 100; break;
+        case 3 : multiply = 1000; break;
+        case 4 : multiply = 10000; break;
+    }
+    
+
+    randomNum =Math.floor(randomNum*multiply) ;
+
+        
+    while(randomNum<x || randomNum>y){
+        randomNum = Math.random()
+        randomNum =Math.floor(randomNum*multiply) ;
+    }
+
+    document.getElementById("randomNumberP").innerHTML= randomNum
+}
+
+
