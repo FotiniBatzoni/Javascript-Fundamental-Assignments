@@ -65,15 +65,28 @@ function longLoremIpsumString(x){
         alert("There are 69 sentences. Your number should be less than 69")
         }
 
-        console.log(x)
         for(let i=0;i<x; i++){
             newLorem.push(numOfSentences[i])
         }
       
-        newLorem.join(". ")
+        newLorem = newLorem.join(". ")
         document.getElementById("longStr2").innerHTML = newLorem
     }else{
         document.getElementById("longStr").innerHTML = lorem
     }
    
+}
+
+function loremBasedOnChars(x){
+    x=document.getElementById("numOfChars").value
+    console.log(x)
+    let newLorem = "";
+    if(x>3575){
+        alert("There are 3575 characters. Your number should be less than 3575")
+        }
+    for (let i =0; i<x; i++){
+        newLorem += lorem[i]
+    }
+
+    document.getElementById("longStr3").innerHTML = newLorem
 }
