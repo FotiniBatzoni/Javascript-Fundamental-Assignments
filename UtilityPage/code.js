@@ -53,7 +53,9 @@ function randomNumberGenerator(x ,y ){
         document.getElementById("randomNumberP").innerHTML= randomNum;
     }
 
-
 }
 
-
+function longLoremIpsumString(){
+    console.log(lorem)
+    document.getElementById("longStr").innerHTML = lorem
+}
