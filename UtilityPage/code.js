@@ -97,3 +97,14 @@ function displayCurrentDate(){
     console.log(newDate)
     document.getElementById("currentDate").innerHTML = newDate
 }
+
+function displayCurrentDate(){
+    const newDate = new Date();
+    document.getElementById("currentDate").innerHTML = newDate
+}
+
+function displayCurrentTime(){
+    const newDate = new Date();
+
+    document.getElementById("currentTime").innerHTML = `${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`
+}
