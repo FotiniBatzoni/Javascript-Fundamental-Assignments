@@ -79,7 +79,7 @@ function longLoremIpsumString(x){
 
 function loremBasedOnChars(x){
     x=document.getElementById("numOfChars").value
-    console.log(x)
+
     let newLorem = "";
     if(x>3575){
         alert("There are 3575 characters. Your number should be less than 3575")
@@ -89,4 +89,11 @@ function loremBasedOnChars(x){
     }
 
     document.getElementById("longStr3").innerHTML = newLorem
+}
+
+
+function displayCurrentDate(){
+    const newDate = new Date();
+    console.log(newDate)
+    document.getElementById("currentDate").innerHTML = newDate
 }
