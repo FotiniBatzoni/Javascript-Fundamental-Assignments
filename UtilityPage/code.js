@@ -108,3 +108,18 @@ function displayCurrentTime(){
 
     document.getElementById("currentTime").innerHTML = `${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`
 }
+
+
+function convertInchesToFeet(){
+   let  inches =  document.getElementById("inches").value
+   let  feet = inches*0.08333
+    document.getElementById("inchesToFeet").innerHTML = feet
+}
+
+function convertFeetToInches(){
+    let  feet =  document.getElementById("feet").value
+
+    inches = 12*feet
+    document.getElementById("feetToInches").innerHTML = inches
+ 
+ }
