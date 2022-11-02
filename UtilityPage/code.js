@@ -154,3 +154,13 @@ function convertFeetToInches(){
     }
     document.getElementById("randomPassword").innerHTML = password
 }
+
+function isEvenOrOdd(){
+    const number = document.getElementById("number").value;
+    if(number%2===0){
+        document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Even`
+    }else{
+        document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Odd` 
+    }
+
+}
