@@ -208,8 +208,5 @@ function returnsRandomObject(){
     let randomNum = Math.random()
 
     randomNum =Math.floor(randomNum*10) ;
-    console.log(names[randomNum].firstName)
-    console.log(names[randomNum].lastName)
-
     document.getElementById("object").innerHTML =`${names[randomNum].firstName} ${names[randomNum].lastName}` 
 }
