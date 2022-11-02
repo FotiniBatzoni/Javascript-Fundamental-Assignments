@@ -123,3 +123,34 @@ function convertFeetToInches(){
     document.getElementById("feetToInches").innerHTML = inches
  
  }
+
+ function compareLength(){
+    const first = document.getElementById("first").value
+    const second = document.getElementById("second").value
+    if(first.length === second.length){
+        document.getElementById("areTheSameLength").innerHTML = true
+    }else if( first.length > second.length ){
+        document.getElementById("areTheSameLength").innerHTML = false
+    }else{
+        document.getElementById("areTheSameLength").innerHTML = false
+   }
+ 
+ }
+
+ 
+ function returnRandomPassword(){
+    const alpha = 'abcdefghijklmnopqrstuvwxyz';
+    const calpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const num = '1234567890';
+    const specials = ',.!@#$%^&*';
+    const options = [alpha, alpha, alpha, calpha, calpha, num, num, specials];
+    let opt, choose;
+    let password = "";
+    for ( let i = 0; i < 8; i++ ) {
+      opt = Math.floor(Math.random() * options.length);
+      choose = Math.floor(Math.random() * (options[opt].length));
+      password = password + options[opt][choose];
+      options.splice(opt, 1);
+    }
+    document.getElementById("randomPassword").innerHTML = password
+}
