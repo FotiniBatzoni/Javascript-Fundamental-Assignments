@@ -9,8 +9,39 @@ const colors = ["red", "blue", "green","yellow","black","pink","orange","purple"
 const names =
 [
     {
-        firstName: "",
-        lastName: ""
+        firstName: "Ana",
+        lastName: "Mosic"
+    },
+    {
+        firstName: "Anita",
+        lastName: "Pana"
+    },
+    {
+        firstName: "Rob",
+        lastName: "Robinson"
+    },
+    {
+        firstName: "Sonia",
+        lastName: "Aleksova"
+    },
+    {
+        firstName: "Nick",
+        lastName: "Paps"
+    },
+    {
+        firstName: "Alex",
+        lastName: "Androvic"
+    },
+    {
+        firstName: "Maria",
+        lastName: "Misic"
+    }, {
+        firstName: "Lena",
+        lastName: "Alevra"
+    },
+    {
+        firstName: "Joe",
+        lastName: "Doe"
     }
 ]
 
@@ -171,4 +202,14 @@ function returnRandomColor(){
     randomNum =Math.floor(randomNum*10) ;
 
     document.getElementById("color").innerHTML=colors[randomNum]
+}
+
+function returnsRandomObject(){
+    let randomNum = Math.random()
+
+    randomNum =Math.floor(randomNum*10) ;
+    console.log(names[randomNum].firstName)
+    console.log(names[randomNum].lastName)
+
+    document.getElementById("object").innerHTML =`${names[randomNum].firstName} ${names[randomNum].lastName}` 
 }
