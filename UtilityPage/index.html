@@ -15,109 +15,109 @@
 </head>
 
 <body>
-    <h1 class="mx-auto" style="width: 900px;">JavaScript Final Project</h1>
+    <h1 class="mx-auto" style="width: 900px;" class="text-secondary">JavaScript Final Project</h1>
     <hr>
-    <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a random number between 1-100</h5>
+    <div class="mx-auto" style="width: 900px;" >
+        <h5  class="text-secondary">Returns a random number between 1-100</h5>
         <button id="randomNumberButton" onclick="randomNumberGenerator(1,100)"  type="button" class="btn btn-info">Click Me</button>
-        <p id="randomNumberP">Result</p>
+        <p id="randomNumberP" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a random number between "Start" and "End"</h5>
+        <h5 class="text-secondary">Returns a random number between "Start" and "End"</h5>
         <label for="rand">Start Number</label>
         <input type="text" name="rand1" id="rand1" >
         <label for="rand">End Number</label>
         <input type="text" name="rand2" id="rand2">
         <button onclick="randomNumberGenerator()"  type="button" class="btn btn-info">Click Me</button>
-        <p id="randomNumberP2">Result</p>
+        <p id="randomNumberP2" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a long Lorem Ipsum String</h5>
+        <h5 class="text-secondary">Returns a long Lorem Ipsum String</h5>
         <button onclick="longLoremIpsumString()"  type="button" class="btn btn-info">Click Me</button>
-        <p id="longStr">Result</p>
+        <p id="longStr" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a Lorem Ipsum String based on the number or sentences specified</h5>
+        <h5 class="text-secondary">Returns a Lorem Ipsum String based on the number or sentences specified</h5>
         <label for="rand">Number of sentences</label>
         <input type="text" name="rand" id="NumOfSentences">
         <button onclick="longLoremIpsumString()"  type="button" class="btn btn-info">Click Me</button>
-        <p id="longStr2">Result</p>
+        <p id="longStr2" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a Lorem Ipsum String based on the number of characters specified</h5>
+        <h5 class="text-secondary">Returns a Lorem Ipsum String based on the number of characters specified</h5>
         <label for="rand">Random Number Generator</label>
         <input type="text" name="rand" id="numOfChars">
         <button onclick="loremBasedOnChars()"  type="button" class="btn btn-info">Click Me</button>
-        <p id="longStr3">Result</p>
+        <p id="longStr3" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns the current date(formatted)</h5>
+        <h5 class="text-secondary">Returns the current date(formatted)</h5>
         <button onclick="displayCurrentDate()"  type="button" class="btn btn-info">Click Me</button>
-        <p id="currentDate">Result</p>
+        <p id="currentDate" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns the current time(formatted)</h5>
+        <h5 class="text-secondary">Returns the current time(formatted)</h5>
         <button onclick="displayCurrentTime()" type="button" class="btn btn-info">Click Me</button>
-        <p  id="currentTime">Result</p>
+        <p  id="currentTime" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Converts Inches to Feet</h5>
+        <h5 class="text-secondary">Converts Inches to Feet</h5>
         <label for="rand">Number of inches</label>
         <input type="text" name="rand" id="inches">
         <button onclick="convertInchesToFeet()" type="button" class="btn btn-info">Click Me</button>
-        <p id="inchesToFeet"  >Result</p>
+        <p id="inchesToFeet" style="font-weight:bold" class="p-3" >Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Converts Feet to Inches</h5>
+        <h5 class="text-secondary">Converts Feet to Inches</h5>
         <label for="rand">Number of inches</label>
         <input type="text" name="rand"  id="feet">
         <button onclick="convertFeetToInches()" type="button" class="btn btn-info">Click Me</button>
-        <p id="feetToInches">Result</p>
+        <p id="feetToInches" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <hh52>Compares if two words are the same length</h5>
+        <h5 class="text-secondary">Compares if two words are the same length</h5>
         <label for="rand">First Word</label>
         <input type="text" name="rand1" id="first">
         <label for="rand">Second Word</label>
         <input type="text" name="rand2" id="second">
         <button onclick="compareLength()" type="button" class="btn btn-info">Click Me</button>
-        <p id="areTheSameLength">Result</p>
+        <p id="areTheSameLength" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a random password</h5>
+        <h5  class="text-secondary">Returns a random password</h5>
         <button onclick="returnRandomPassword()" type="button" class="btn btn-info">Click Me</button>
-        <p id="randomPassword">Result</p>
+        <p id="randomPassword" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
         <!-- Challenge. See if you can use the % symbol. Google "javascript modulo". -->
-        <h5>Tells you if the number is even or odd</h5>
+        <h5 class="text-secondary">Tells you if the number is even or odd</h5>
         <label for="rand">Number</label>
         <input type="text" name="rand" id ="number">
         <button onclick="isEvenOrOdd()" type="button" class="btn btn-info">Click Me</button>
-        <p id="evenOrOdd">Result</p>
+        <p id="evenOrOdd" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a random color</h5>
+        <h5 class="text-secondary">Returns a random color</h5>
         <button onclick="returnRandomColor()" type="button" class="btn btn-info">Click Me</button>
-        <p id="color" >Result</p>
+        <p id="color" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <div class="mx-auto" style="width: 900px;">
-        <h5>Returns a random first and last name</h5>
+        <h5 class="text-secondary">Returns a random first and last name</h5>
         <button onclick="returnsRandomObject()" type="button" class="btn btn-info">Click Me</button>
-        <p id="object">Result</p>
+        <p id="object" style="font-weight:bold" class="p-3">Result</p>
     </div>
     <hr>
     <script src="code.js"></script>
