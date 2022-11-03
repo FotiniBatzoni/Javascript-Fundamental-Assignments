@@ -187,11 +187,17 @@ function convertFeetToInches(){
 }
 
 function isEvenOrOdd(){
-    const number = document.getElementById("number").value;
-    if(number%2===0){
-        document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Even`
+    const number = parseInt(document.getElementById("number").value);
+
+    if(!number || number==null || number==undefined){
+
+        document.getElementById("evenOrOdd").innerHTML = `Enter a valid number please` 
     }else{
-        document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Odd` 
+        if(number%2===0){
+            document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Even`
+        }else{
+            document.getElementById("evenOrOdd").innerHTML = `The number ${number} is Odd` 
+        }
     }
 
 }
